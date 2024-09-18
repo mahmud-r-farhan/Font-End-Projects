@@ -1,0 +1,334 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+
+    /* font-family based on system */
+    cursor: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+   
+
+}
+
+.navbar {
+            transition: all 0.3s ease;
+        }
+.navbar.sticky-top {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+        
+body.fixed-nav {
+        padding-top: 56px; 
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    border: 1px solid rgb(255, 255, 255); /* White border */
+    border-radius: 50%; /* Makes the element a circle */
+    pointer-events: none; /* Ensures the cursor doesn't interfere with other elements */
+    z-index: 1000; /* Keeps the cursor on top */
+    transform: translate(-50%, -50%); /* Centers the cursor */
+}
+
+
+.carousel-item {
+        height: 500px; 
+}
+.carousel-item img {
+        object-fit: cover;
+        height: 100%;
+}
+.carousel-caption {
+   
+        position: absolute;
+    
+}
+/* filterable-gallery */
+
+.filterable-gallery {
+    padding: 80px 0 60px 0;
+    height: 100vh;
+   
+    
+}
+
+/* client review section */
+
+
+.reviews-section {
+ 
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    color: #343a40;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #ffc107;
+    margin: 15px auto 0;
+}
+.review-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.review-author {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.review-date {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+.review-body {
+    padding: 20px;
+}
+.review-text {
+    font-style: italic;
+    color: #495057;
+}
+.review-rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* pricing sections css */
+
+.pricing {
+    
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+.pricing::before,
+.pricing::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.pricing::before {
+    top: -150px;
+    left: -150px;
+}
+.pricing::after {
+    bottom: -150px;
+    right: -150px;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #ffc107;
+    margin: 15px auto 0;
+}
+.pricing-card {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+.period {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+.feature-list {
+    padding: 0;
+    list-style-type: none;
+}
+.feature-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+.feature-list li:last-child {
+    border-bottom: none;
+}
+.feature-list i {
+    margin-right: 10px;
+    color: #28a745;
+}
+.feature-list .text-muted i {
+    color: #dc3545;
+}
+.btn-select {
+    background-color: #ffc107;
+    border: none;
+    color: #343a40;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+.btn-select:hover {
+    background-color: #ffca2c;
+    transform: scale(1.09);
+}
+.most-popular {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.05);
+}
+.most-popular .card-header {
+    background-color: #ffc107;
+    color: #343a40;
+}
+.most-popular::before {
+    content: "Most Popular";
+    position: absolute;
+    top: 20px;
+    right: -55px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 50px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+/* feedback section */
+.feedback {
+    padding: 10vh 0;
+}
+.feedback-section {
+    background-color: #27363001;
+    padding: 20px 0;
+    
+}
+
+.contact-info i {
+    
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+.contact-info p {
+    margin-bottom: 20px;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+/* about section*/
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.carousel-item img {
+ 
+    object-fit: cover;
+}
+.blog-post {
+    margin-bottom: 40px;
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.blog-post h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+.blog-post p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+footer {
+    padding-top: 45px;
+    background-color: #3a3f4405;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.footer-about {
+    max-width: 300px;
+}

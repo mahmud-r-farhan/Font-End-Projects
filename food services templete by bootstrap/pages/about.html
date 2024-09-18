@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 exam</title>
+    <meta name="description" content=" website">
+
+    <!--Custom CSS- assets/css/index.css-->
+    
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!--bootstrap css/ 5.3-->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--bootstrap icons assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.css-->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="company Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Company Co.
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation items in the middle -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">blog</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQ</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Profile icon on the right -->
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+          <!--about content-->
+          <section class="about-section">
+            <div class="container">
+                <h2 class="text-center mb-5">About Our Service</h2>
+                
+                <!-- Image Slider -->
+                <div id="aboutCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/about (1).jpg" class="d-block w-100" alt="Catering Service 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/about (2).jpg" class="d-block w-100" alt="Catering Service 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/about (3).jpg" class="d-block w-100" alt="Catering Service 3">
+                        </div>
+                       
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                <!-- Blog-style About Section -->
+                <div class="row py-4" id="blog">
+                    <div class="col-md-6 blog-post">
+                        <img src="../assets/img/food-story.jpg" alt="Our Story">
+                        <h3>Our Story</h3>
+                        <p>Founded in 2005, our catering service has been delivering exceptional culinary experiences for over 15 years. We started as a small family business and have grown into one of the most trusted catering companies in the region, serving weddings, corporate events, and private parties.</p>
+                    </div>
+                    <div class="col-md-6 blog-post">
+                        <img src="../assets/img/passion.jpg" alt="Our Passion">
+                        <h3>Our Passion</h3>
+                        <p>At the heart of our service is a passion for food and a commitment to quality. We believe that every event deserves exceptional catering, and we pour our hearts into creating memorable dining experiences. Our team of skilled chefs combines traditional techniques with innovative flavors to delight your taste buds.</p>
+                    </div>
+                    <div class="col-md-6 blog-post">
+                        <img src="../assets/img/ingredients.webp" alt="Our Ingredients">
+                        <h3>Fresh, Local Ingredients</h3>
+                        <p>We take pride in sourcing the freshest, locally-grown ingredients for our dishes. By partnering with local farmers and suppliers, we ensure that our food is not only delicious but also supports our community. Our seasonal menus reflect the best of what's available, guaranteeing peak flavor and quality.</p>
+                    </div>
+                    <div class="col-md-6 blog-post">
+                        <img src="../assets/img/food-team.jpg" alt="Our Team">
+                        <h3>Meet Our Team</h3>
+                        <p>Behind every successful event is our dedicated team of professionals. From our experienced chefs to our attentive service staff, each member plays a crucial role in ensuring your event is a success. We're committed to providing not just great food, but also impeccable service that exceeds your expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+                <iframe id="team" src="../assets/sections/team-member.html" width="100%" height="700px" frameborder="0"></iframe>
+
+   
+    
+    <!--footer section-->
+    <footer>
+        <div class="container footer">
+            <div class="row mb-4 align-items-center">
+                <!-- Left side - Logo -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="../assets/img/logo.png" alt="Catering Logo" width="40" height="40" class="me-2">
+                        <span class="fs-4 text-dark">Company Co.</span>
+                       </a>
+                </div>
+
+                <!-- Center - Navigation -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="/pages/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+                        <li class="nav-item"><a href="/pages/faq.html" class="nav-link px-2 text-muted">FAQ</a></li>
+                       
+                    </ul>
+                </div>
+
+                <!-- Right side - About text -->
+                <div class="col-md-3 py-4">
+                    <h5 class="text-dark">About Us</h5>
+                    <p class="text-muted footer-about">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p id="Time" style="position: relative; bottom: 10px; text-shadow: 2px 2px #1816161a;" class="text-muted footer-about"></p>
+           
+                        
+                </div>
+                
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a>
+                    <a href="#" class="text-muted"><i class="bi bi-twitter"></i><span class="visually-hidden">Twitter</span></a>
+                </div>
+            </div>
+
+            <!-- Horizontal line -->
+            <hr class="my-4">
+
+            <!-- Copyright text -->
+            <div class="row">
+                
+                <div class="col-12 text-center">
+                    <p class="text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Company Co. All rights reserved.</p>
+                
+                
+            </div>
+        </div>
+    </footer>
+
+
+<!--time and date stamp!-->
+ <script>
+</script>
+
+
+
+    <!--bootstrap 5.3 js-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom Js-->
+    <script src="../assets/js/index.js"></script>
+
+ 
+</body>
+</html>

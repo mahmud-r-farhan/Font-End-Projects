@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 exam</title>
+    <meta name="description" content=" website">
+
+    <!--Custom CSS- assets/css/index.css-->
+    
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!--bootstrap css/ 5.3-->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--bootstrap icons assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.css-->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="company Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Company Co.
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation items in the middle -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                 
+                </ul>
+            </div>
+
+            <!-- Profile icon on the right -->
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+   
+    <main class="container my-5">
+        <h1 class="mb-5">Contact Us</h1>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Contact Form</h2>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button id="feedback" type="submit" class="btn btn-primary" style="padding: 10px 45px;">Submit</button>
+                    <p id="message"></p>
+                
+                    <script>
+                        document.getElementById('feedback').addEventListener('click', function() {
+                            window.alert('send success');
+                            document.getElementById('message').innerText = 'send success';
+                        });
+                    </script>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Fultola, Shajhanpur Bogura 5800</p>
+                <p><strong>Email:</strong> director@nactar.org</p>
+                <p><strong>Phone:</strong> 051-60988</p>
+                <div class="mt-4">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452.651376634026!2d89.36264670099956!3d24.82245640765775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc548855773b45%3A0x24dca5508ee7a170!2sNational%20Academy%20for%20Computer%20Training%20%26%20Research!5e0!3m2!1sen!2sbd!4v1726670930283!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <!--footer section-->
+    <footer>
+        <div class="container footer">
+            <div class="row mb-4 align-items-center">
+                <!-- Left side - Logo -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="../assets/img/logo.png" alt="Catering Logo" width="40" height="40" class="me-2">
+                        <span class="fs-4 text-dark">Company Co.</span>
+                       </a>
+                </div>
+
+                <!-- Center - Navigation -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="/pages/about.html" class="nav-link px-2 text-muted">about</a></li>
+                        <li class="nav-item"><a href="/pages/faq.html" class="nav-link px-2 text-muted">FAQ</a></li>
+                       
+                    </ul>
+                </div>
+
+                <!-- Right side - About text -->
+                <div class="col-md-3 py-4">
+                    <h5 class="text-dark">About Us</h5>
+                    <p class="text-muted footer-about">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p id="Time" style="position: relative; bottom: 10px; text-shadow: 2px 2px #1816161a;" class="text-muted footer-about"></p>
+           
+                        
+                </div>
+                
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a>
+                    <a href="#" class="text-muted"><i class="bi bi-twitter"></i><span class="visually-hidden">Twitter</span></a>
+                </div>
+            </div>
+
+            <!-- Horizontal line -->
+            <hr class="my-4">
+
+            <!-- Copyright text -->
+            <div class="row">
+                
+                <div class="col-12 text-center">
+                    <p class="text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Company Co. All rights reserved.</p>
+                
+                
+            </div>
+        </div>
+    </footer>
+
+
+<!--time and date stamp!-->
+ <script>
+</script>
+
+
+
+    <!--bootstrap 5.3 js-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom Js-->
+    <script src="../assets/js/index.js"></script>
+
+ 
+</body>
+</html>

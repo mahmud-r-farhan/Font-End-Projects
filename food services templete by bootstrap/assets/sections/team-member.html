@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Team Section</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../css/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <style>
+
+        ::-webkit-scrollbar {
+           display: none;
+        }
+  
+       
+        .team-section {
+            background-color: #f8f9fa44;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .team-section::before,
+        .team-section::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 123, 255, 0.1);
+            border-radius: 50%;
+        }
+        .team-section::before {
+            top: -100px;
+            left: -100px;
+        }
+        .team-section::after {
+            bottom: -100px;
+            right: -100px;
+        }
+        .team-member {
+            transition: all 0.5s ease;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .team-member:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .team-member-img {
+            top: 10px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .team-member img {
+            max-width: 120px;
+            width: 100%;
+           
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            border: 5px solid #ffffff;
+            box-shadow: 0 5px 15px rgba(32, 33, 36, 0.034);
+        }
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+        .team-member-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member h5 {
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+        .team-member p {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .social-icons {
+            margin-top: 15px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .team-member:hover .social-icons {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: #007bff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin: 0 5px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .social-icons a:hover {
+            background-color: #0056b3;
+            transform: rotate(360deg);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .team-member:nth-child(odd) {
+            animation: float 4s ease-in-out infinite;
+        }
+        .team-member:nth-child(even) {
+            animation: float 4s ease-in-out infinite 2s;
+        }
+        @media (max-width: 767px) {
+            .team-member {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="team-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Amazing Team</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="John Doe">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>John Doe</h5>
+                            <p>CEO</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="Jane Smith">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Jane Smith</h5>
+                            <p>CTO</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="Mike Johnson">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Mike Johnson</h5>
+                            <p>Lead Designer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="Emily Brown">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Emily Brown</h5>
+                            <p>Senior Developer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="Alex Wilson">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Alex Wilson</h5>
+                            <p>Marketing Manager</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <div class="team-member-img">
+                            <img src="../img/profile.png" alt="Sarah Lee">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Sarah Lee</h5>
+                            <p>Product Manager</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
